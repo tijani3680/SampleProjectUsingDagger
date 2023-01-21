@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subjects"
+    app:startDestination="@id/fragmentSubject">
+
+    <fragment
+        android:id="@+id/fragmentSubject"
+        android:name="com.example.mysampleminidaggerproject.ui.view.fragment.FragmentSubject"
+        android:label="FragmentSubject" >
+        <action
+            android:id="@+id/action_fragmentSubject_to_fragmentDataStore"
+            app:destination="@id/fragmentDataStore" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDataStore"
+        android:name="com.example.mysampleminidaggerproject.ui.view.fragment.FragmentDataStore"
+        android:label="FragmentDataStore" />
+</navigation>
